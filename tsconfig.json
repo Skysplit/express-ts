@@ -1,13 +1,16 @@
 {
+  "ts-node": {
+    "files": true
+  },
   "compilerOptions": {
     "incremental": true,
     "target": "ESNext",
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "module": "CommonJS",
-    "rootDir": "./src",
+    "rootDir": "./",
     "moduleResolution": "node",
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "sourceMap": true,
     "outDir": "./dist",
     "importHelpers": true,
@@ -16,5 +19,6 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true
-  }
+  },
+  "include": ["./src"]
 }

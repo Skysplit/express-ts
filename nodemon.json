@@ -1,5 +1,6 @@
 {
+  "$schema": "https://json.schemastore.org/nodemon.json",
   "watch": ["src/", "tsconfig.json"],
   "ext": "ts,json",
-  "exec": "ts-node -r dotenv/config src/index.ts"
+  "exec": "ts-node -r dotenv/config src/index.ts || touch src/index.ts"
 }
